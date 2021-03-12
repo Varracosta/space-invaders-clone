@@ -23,7 +23,7 @@ public class SceneLoader : MonoBehaviour
     }
     private IEnumerator WaitAndLoad() 
     {
-        AudioSource.PlayClipAtPoint(_gameOverSFX, Camera.main.transform.position, 0.4f);
+        AudioSource.PlayClipAtPoint(_gameOverSFX, Camera.main.transform.position, 0.7f);
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("Game Over");
     }

@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private AudioClip _hitSFX;
     [SerializeField] private GameObject _explosion;
     [SerializeField] private AudioClip _bonusSFX;
-    private float _deathSoundVolume = 0.7f;
+    private float _deathSoundVolume = 0.6f;
     private const int MAX_HEALTH = 300;
     private int _currentHealth;
     private float _shipSpeed = 10f;

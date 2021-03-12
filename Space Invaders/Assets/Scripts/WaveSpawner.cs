@@ -12,18 +12,6 @@ public class WaveSpawner : MonoBehaviour
     private Vector2 _waveSpawnPosition;
     private int _waveIndex = 0;
 
-    private void Awake()
-    {
-        if(FindObjectsOfType<WaveSpawner>().Length > 1)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            DontDestroyOnLoad(gameObject);
-        }
-    }
-
     private void Start()
     {
         _waveSpawnPosition = new Vector2(7f, 13f);
